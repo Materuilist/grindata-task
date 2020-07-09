@@ -7,4 +7,8 @@
   height: 3rem !important;
   width: 3rem !important;
   cursor: pointer;
+  &:hover {
+    fill: $more-blue !important;
+    stroke: $more-yellow !important;
+  }
 }

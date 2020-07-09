@@ -14,7 +14,7 @@ interface IProps {
 function ToolBarComponent({ selectedEmployeeId, deleteEmployee }: IProps) {
   const deleteButtonActive: boolean = selectedEmployeeId !== -1;
   return (
-    <div>
+    <div className="text-right pt-2">
       <AddBoxIcon className={styles.AddButton} />
       <DeleteIcon
         className={styles.DeleteButton}

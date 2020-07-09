@@ -8,11 +8,11 @@ export const addEmployee = (newEmployee: Employee): IAction => ({
 });
 
 export const removeEmployee = (employeeId: number): IAction => ({
-  type: actionTypes.ADD_USER,
+  type: actionTypes.REMOVE_USER,
   employeeId,
 });
 
 export const alterEmployee = (employee: Employee): IAction => ({
-  type: actionTypes.ADD_USER,
+  type: actionTypes.ALTER_USER,
   employee,
 });
