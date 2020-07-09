@@ -1,0 +1,13 @@
+@import "../../../variables.scss";
+
+label, legend {
+  align-self: flex-end;
+  font-size: 1.1rem !important;
+  color: $more-blue;
+}
+
+.Input {
+  &.InValid {
+    border-color: #b84c4c;
+  }
+}

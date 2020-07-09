@@ -6,14 +6,10 @@ import { EmployeeItem } from "./EmployeeItem";
 
 interface IProps {
   employees: Employee[];
-  selectedEmployeeId: number;
-  employeeSelectedHandler: any;
 }
 
 function EmployeesListComponent({
   employees,
-  selectedEmployeeId,
-  employeeSelectedHandler,
 }: IProps) {
   return (
     <div>
@@ -21,8 +17,6 @@ function EmployeesListComponent({
         <EmployeeItem
           key={emp.id}
           employee={emp}
-          isSelected={emp.id === selectedEmployeeId}
-          clickHandler={employeeSelectedHandler}
         />
       ))}
     </div>

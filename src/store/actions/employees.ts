@@ -16,3 +16,8 @@ export const alterEmployee = (employee: Employee): IAction => ({
   type: actionTypes.ALTER_USER,
   employee,
 });
+
+export const selectEmployee = (employee: Employee | null): IAction => ({
+  type: actionTypes.SELECT_EMPLOYEE,
+  employee,
+});

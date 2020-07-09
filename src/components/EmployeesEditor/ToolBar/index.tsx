@@ -5,6 +5,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import styles from "./styles.module.scss";
 import { removeEmployee } from "../../../store/actions/employees";
 import { connect } from "react-redux";
+import { IReducerState } from "../../../store";
 
 interface IProps {
   selectedEmployeeId: number;
@@ -28,8 +29,12 @@ function ToolBarComponent({ selectedEmployeeId, deleteEmployee }: IProps) {
   );
 }
 
+const mapStateToProps = (state:IReducerState)=>({
+  selectedEmployeeId:state.employees.selected?.id || -1
+})
+
 const mapDispatchToProps = (dispatch: any) => ({
   deleteEmployee: (id: number) => dispatch(removeEmployee(id)),
 });
 
-export const ToolBar = connect(null, mapDispatchToProps)(ToolBarComponent);
+export const ToolBar = connect(mapStateToProps, mapDispatchToProps)(ToolBarComponent);
