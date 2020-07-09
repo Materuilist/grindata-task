@@ -1,0 +1,10 @@
+@import "../../variables.scss";
+
+.ListWithToolBar, .EditorPanel{
+    background-color: $yellow;
+    border-radius: 10px;
+}
+
+hr{
+    background-color: $blue;
+}

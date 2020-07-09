@@ -1,0 +1,10 @@
+@import "../../../variables.scss";
+
+.AddButton,
+.DeleteButton {
+  fill: $blue !important;
+  stroke: $yellow !important;
+  height: 3rem !important;
+  width: 3rem !important;
+  cursor: pointer;
+}
