@@ -28,7 +28,7 @@ export function EmployeesEditor({ employees }: IProps) {
           <EmployeesList
           />
         </div>
-        <div className={concatClasses(styles.EditorPanel, "col-5 h-100")}>
+        <div className={concatClasses(styles.EditorPanel, "col-5 h-100 py-5")}>
           <EditorPanel />
         </div>
       </div>

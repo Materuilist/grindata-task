@@ -1,5 +1,9 @@
 @import "../../../variables.scss";
 
+.Main{
+    overflow: auto;
+}
+
 .Label{
     color:$more-blue;
     font-size: 1.2rem;

@@ -17,7 +17,7 @@ interface IProps {
 
 function EditorPanelComponent({ employee, updateEmployee, employees }: IProps) {
   return (
-    <div className="container py-5">
+    <div className={concatClasses(styles.Main,"container h-100")}>
       {employee ? (
         <div className="row">
           <div className="col-12 d-flex flex-column">
