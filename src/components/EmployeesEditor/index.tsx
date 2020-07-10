@@ -20,7 +20,7 @@ export function EmployeesEditor({ employees }: IProps) {
         <div
           className={concatClasses(
             styles.ListWithToolBar,
-            "col-6 mr-5 d-flex flex-column h-100"
+            "col-6 mr-5 d-flex flex-column h-100 pb-5"
           )}
         >
           <ToolBar />

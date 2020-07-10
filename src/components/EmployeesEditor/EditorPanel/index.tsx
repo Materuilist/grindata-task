@@ -44,9 +44,16 @@ function EditorPanelComponent({ employee, updateEmployee }: IProps) {
             </div>
             <Input
               type="date"
-              value={employee.birthDate?.toISOString().split("T")[0]}
+              value={
+                employee.birthDate
+                  ? employee.birthDate.toISOString().split("T")[0]
+                  : ""
+              }
               rusNaming="Дата рождения:"
               valueChangedHandler={(value: string) => {
+                if(new Date(value).toString() === "Invalid Date"){
+                  return;
+                }
                 employee.birthDate = new Date(value);
                 updateEmployee(employee);
               }}
@@ -73,7 +80,7 @@ function EditorPanelComponent({ employee, updateEmployee }: IProps) {
                     className="form-check-input"
                     type="radio"
                     name="sex"
-                    checked={!employee.sex}
+                    checked={employee.sex === false}
                     onChange={(event) => {
                       employee.sex = false;
                       updateEmployee(employee);
