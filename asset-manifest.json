@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/grindata-task/static/css/main.d0d2ba9a.chunk.css",
+    "main.js": "/grindata-task/static/js/main.672c4d89.chunk.js",
+    "main.js.map": "/grindata-task/static/js/main.672c4d89.chunk.js.map",
+    "runtime-main.js": "/grindata-task/static/js/runtime-main.26d3b5e5.js",
+    "runtime-main.js.map": "/grindata-task/static/js/runtime-main.26d3b5e5.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/grindata-task/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.9dbc1dd8.chunk.js": "/grindata-task/static/js/2.9dbc1dd8.chunk.js",
+    "static/js/2.9dbc1dd8.chunk.js.map": "/grindata-task/static/js/2.9dbc1dd8.chunk.js.map",
+    "index.html": "/grindata-task/index.html",
+    "precache-manifest.0bc0d959a845234f96e322723cac0463.js": "/grindata-task/precache-manifest.0bc0d959a845234f96e322723cac0463.js",
+    "service-worker.js": "/grindata-task/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/grindata-task/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.d0d2ba9a.chunk.css.map": "/grindata-task/static/css/main.d0d2ba9a.chunk.css.map",
+    "static/js/2.9dbc1dd8.chunk.js.LICENSE.txt": "/grindata-task/static/js/2.9dbc1dd8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.26d3b5e5.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.9dbc1dd8.chunk.js",
+    "static/css/main.d0d2ba9a.chunk.css",
+    "static/js/main.672c4d89.chunk.js"
+  ]
+}
