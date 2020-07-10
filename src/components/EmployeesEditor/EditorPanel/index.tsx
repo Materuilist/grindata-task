@@ -1,17 +1,21 @@
 import React from "react";
+import { connect } from "react-redux";
+
 import { Input } from "../../shared/Input";
 import { Employee } from "../../../models/entities/employee.class";
-import { connect } from "react-redux";
 import { alterEmployee } from "../../../store/actions/employees";
 import { positions } from "../../../data";
 import { IReducerState } from "../../../store";
+import { concatClasses } from "../../../utils/concatClasses";
+import styles from "./styles.module.scss";
 
 interface IProps {
   employee: Employee | null;
+  employees: Employee[];
   updateEmployee: (employee: Employee) => void;
 }
 
-function EditorPanelComponent({ employee, updateEmployee }: IProps) {
+function EditorPanelComponent({ employee, updateEmployee, employees }: IProps) {
   return (
     <div className="container py-5">
       {employee ? (
@@ -51,7 +55,7 @@ function EditorPanelComponent({ employee, updateEmployee }: IProps) {
               }
               rusNaming="Дата рождения:"
               valueChangedHandler={(value: string) => {
-                if(new Date(value).toString() === "Invalid Date"){
+                if (new Date(value).toString() === "Invalid Date") {
                   return;
                 }
                 employee.birthDate = new Date(value);
@@ -106,10 +110,43 @@ function EditorPanelComponent({ employee, updateEmployee }: IProps) {
                 </div>
               </div>
             </div>
+            {employees.length === 1 ? null : (
+              <div className="form-group">
+                <label>Коллеги:</label>
+                <select
+                  multiple
+                  className="form-control"
+                  onChange={(event) => {
+                    const colleagues = [...event.target.selectedOptions].map(
+                      (option) => +option.value
+                    );
+                    employee.colleagues = colleagues;
+                    updateEmployee(employee);
+                  }}
+                >
+                  {employees
+                    .filter((emp) => emp.id !== employee.id)
+                    .map((emp) => (
+                      <option
+                        key={emp.id}
+                        value={emp.id}
+                        selected={
+                          employee.colleagues?.find((e) => e === emp.id) !==
+                          undefined
+                        }
+                      >
+                        {emp.fullName}
+                      </option>
+                    ))}
+                </select>
+              </div>
+            )}
           </div>
         </div>
       ) : (
-        "Выберите сотрудника!"
+        <div className={concatClasses(styles.Label, "text-center")}>
+          Выберите сотрудника!
+        </div>
       )}
     </div>
   );
@@ -117,6 +154,7 @@ function EditorPanelComponent({ employee, updateEmployee }: IProps) {
 
 const mapStateToProps = (state: IReducerState) => ({
   employee: state.employees.selected,
+  employees: state.employees.data,
 });
 
 const mapDispatchToProps = (dispatch: any) => ({

@@ -1,35 +1,40 @@
 @import "../../../variables.scss";
 
-.EmployeesList{
-    overflow-y: auto;
+.EmployeesList {
+  overflow-y: auto;
+}
+
+.Label {
+  color: $more-blue;
+  font-size: 1.1rem;
 }
 
 ::-webkit-scrollbar-button {
-    width: .7rem;
-    height: 0;
+  width: 0.7rem;
+  height: 0;
 }
 
 ::-webkit-scrollbar-track {
-   background-color: #ecedee;
-   -webkit-border-radius: 2rem;
-   border-radius: 2rem;
+  background-color: #ecedee;
+  -webkit-border-radius: 2rem;
+  border-radius: 2rem;
 }
 
 ::-webkit-scrollbar-thumb {
-   -webkit-border-radius: 2rem;
-   border-radius: 2rem;
-   background-color: $blue;
+  -webkit-border-radius: 2rem;
+  border-radius: 2rem;
+  background-color: $blue;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-   background-color: $more-blue;
+  background-color: $more-blue;
 }
 
 ::-webkit-resizer {
-   width: .7rem;
-   height: 0;
+  width: 0.7rem;
+  height: 0;
 }
 
 ::-webkit-scrollbar {
-   width: .7rem;
+  width: 0.7rem;
 }

@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import _ from "lodash";
 
 import { Employee } from "../../models/entities/employee.class";
 import { employees } from "../../data";
@@ -40,9 +40,14 @@ export const reducer = (
       return {
         ...state,
         data: [
-          ...state.data.filter(
-            ({ id: employeeId }) => employeeId !== action.employeeId
-          ),
+          ...state.data
+            .filter(({ id: employeeId }) => employeeId !== action.employeeId)
+            .map((emp) => {
+              emp.colleagues = emp.colleagues?.filter(
+                (c) => c !== action.employeeId
+              );
+              return emp;
+            }),
         ],
         selected: null,
       };
