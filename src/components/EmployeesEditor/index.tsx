@@ -20,7 +20,7 @@ export function EmployeesEditor({ employees }: IProps) {
         <div
           className={concatClasses(
             styles.ListWithToolBar,
-            "col-6 mr-5 d-flex flex-column h-100 pb-5"
+            "col-sm-6 col-11 mr-5 d-flex flex-column h-100 pb-5"
           )}
         >
           <ToolBar />
@@ -28,7 +28,7 @@ export function EmployeesEditor({ employees }: IProps) {
           <EmployeesList
           />
         </div>
-        <div className={concatClasses(styles.EditorPanel, "col-5 h-100 py-5")}>
+        <div className={concatClasses(styles.EditorPanel, "col-sm-5 col-11 h-100 py-5")}>
           <EditorPanel />
         </div>
       </div>

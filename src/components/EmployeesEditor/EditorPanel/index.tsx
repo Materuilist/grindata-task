@@ -65,7 +65,7 @@ function EditorPanelComponent({ employee, updateEmployee, employees }: IProps) {
             />
             <fieldset className="form-group">
               <legend className="col-form-label w-100">Пол:</legend>
-              <div className="col-sm-10">
+              <div className="col-10">
                 <div className="form-check">
                   <input
                     className="form-check-input"
@@ -77,7 +77,7 @@ function EditorPanelComponent({ employee, updateEmployee, employees }: IProps) {
                       updateEmployee(employee);
                     }}
                   />
-                  <label className="form-check-label">Мужской</label>
+                  <label className="form-check-label ml-1">Мужской</label>
                 </div>
                 <div className="form-check">
                   <input
@@ -90,13 +90,13 @@ function EditorPanelComponent({ employee, updateEmployee, employees }: IProps) {
                       updateEmployee(employee);
                     }}
                   />
-                  <label className="form-check-label">Женский</label>
+                  <label className="form-check-label ml-1">Женский</label>
                 </div>
               </div>
             </fieldset>
             <div className="form-group row">
-              <label className="col-sm-2 mr-2">Уволен:</label>
-              <div className="col-sm-9">
+              <label className="col-lg-2 col-3 pr-0">Уволен:</label>
+              <div className="col-lg-10 col-9 pl-1">
                 <div className="form-check pt-1">
                   <input
                     className="form-check-input"

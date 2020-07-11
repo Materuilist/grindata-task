@@ -4,7 +4,7 @@
     overflow: auto;
 }
 
-.Label{
-    color:$more-blue;
-    font-size: 1.2rem;
+.Label, legend{
+    color:$more-blue !important;
+    font-size: 1.2rem !important;
 }
