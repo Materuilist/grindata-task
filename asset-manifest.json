@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/grindata-task/static/css/main.6638375d.chunk.css",
-    "main.js": "/grindata-task/static/js/main.2f3643c6.chunk.js",
-    "main.js.map": "/grindata-task/static/js/main.2f3643c6.chunk.js.map",
+    "main.css": "/grindata-task/static/css/main.9c3078b8.chunk.css",
+    "main.js": "/grindata-task/static/js/main.983a7b3f.chunk.js",
+    "main.js.map": "/grindata-task/static/js/main.983a7b3f.chunk.js.map",
     "runtime-main.js": "/grindata-task/static/js/runtime-main.26d3b5e5.js",
     "runtime-main.js.map": "/grindata-task/static/js/runtime-main.26d3b5e5.js.map",
     "static/css/2.af3c1da9.chunk.css": "/grindata-task/static/css/2.af3c1da9.chunk.css",
     "static/js/2.cd1c57a3.chunk.js": "/grindata-task/static/js/2.cd1c57a3.chunk.js",
     "static/js/2.cd1c57a3.chunk.js.map": "/grindata-task/static/js/2.cd1c57a3.chunk.js.map",
     "index.html": "/grindata-task/index.html",
-    "precache-manifest.7da8606541c80a9a6ea4d17abd78e840.js": "/grindata-task/precache-manifest.7da8606541c80a9a6ea4d17abd78e840.js",
+    "precache-manifest.a91b83eeabdd5def8aa0765467565207.js": "/grindata-task/precache-manifest.a91b83eeabdd5def8aa0765467565207.js",
     "service-worker.js": "/grindata-task/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/grindata-task/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.6638375d.chunk.css.map": "/grindata-task/static/css/main.6638375d.chunk.css.map",
+    "static/css/main.9c3078b8.chunk.css.map": "/grindata-task/static/css/main.9c3078b8.chunk.css.map",
     "static/js/2.cd1c57a3.chunk.js.LICENSE.txt": "/grindata-task/static/js/2.cd1c57a3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.26d3b5e5.js",
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.cd1c57a3.chunk.js",
-    "static/css/main.6638375d.chunk.css",
-    "static/js/main.2f3643c6.chunk.js"
+    "static/css/main.9c3078b8.chunk.css",
+    "static/js/main.983a7b3f.chunk.js"
   ]
 }
