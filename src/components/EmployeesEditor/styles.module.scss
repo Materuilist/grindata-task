@@ -2,14 +2,19 @@
 @import "bootstrap";
 
 .ListWithToolBar, .EditorPanel{
+    height: 100%;
     background-color: $yellow;
     border-radius: 10px;
+    @include media-breakpoint-down(sm){
+        height: 50% !important;
+        margin-left: auto;
+        margin-right: auto !important;
+        margin-bottom: 3rem;
+    }
 }
 
 .ListWithToolBar{
-    @include media-breakpoint-down(sm){
-        margin-bottom: 3rem;
-    }
+    margin-right: 3rem;
 }
 
 hr{
