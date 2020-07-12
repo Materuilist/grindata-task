@@ -17,7 +17,7 @@ interface IProps {
 
 function EditorPanelComponent({ employee, updateEmployee, employees }: IProps) {
   return (
-    <div className={concatClasses(styles.Main,"container h-100")}>
+    <div className={concatClasses(styles.Main, "container h-100")}>
       {employee ? (
         <div className="row">
           <div className="col-12 d-flex flex-column">
@@ -66,7 +66,7 @@ function EditorPanelComponent({ employee, updateEmployee, employees }: IProps) {
             <fieldset className="form-group">
               <legend className="col-form-label w-100">Пол:</legend>
               <div className="col-10">
-                <div className="form-check">
+                <div className="form-check mb-1">
                   <input
                     className="form-check-input"
                     type="radio"
@@ -77,7 +77,7 @@ function EditorPanelComponent({ employee, updateEmployee, employees }: IProps) {
                       updateEmployee(employee);
                     }}
                   />
-                  <label className="form-check-label ml-1">Мужской</label>
+                  <label className="form-check-label ml-3">Мужской</label>
                 </div>
                 <div className="form-check">
                   <input
@@ -90,23 +90,27 @@ function EditorPanelComponent({ employee, updateEmployee, employees }: IProps) {
                       updateEmployee(employee);
                     }}
                   />
-                  <label className="form-check-label ml-1">Женский</label>
+                  <label className="form-check-label ml-3">Женский</label>
                 </div>
               </div>
             </fieldset>
             <div className="form-group row">
-              <label className="col-lg-2 col-3 pr-0">Уволен:</label>
-              <div className="col-lg-10 col-9 pl-1">
-                <div className="form-check pt-1">
-                  <input
-                    className="form-check-input"
-                    type="checkbox"
-                    checked={employee.isFired}
-                    onChange={(event) => {
-                      employee.isFired = event.target.checked;
-                      updateEmployee(employee);
-                    }}
-                  />
+              <div className="col-12 d-flex">
+                <label className={concatClasses(styles.FitContent, "mr-2")}>
+                  Уволен:
+                </label>
+                <div>
+                  <div className="form-check pt-1">
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      checked={employee.isFired}
+                      onChange={(event) => {
+                        employee.isFired = event.target.checked;
+                        updateEmployee(employee);
+                      }}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -116,6 +120,13 @@ function EditorPanelComponent({ employee, updateEmployee, employees }: IProps) {
                 <select
                   multiple
                   className="form-control"
+                  value={employees
+                    .filter(
+                      (emp) =>
+                        employee.colleagues?.find((e) => e === emp.id) !==
+                        undefined
+                    )
+                    .map((emp) => emp.id.toString())}
                   onChange={(event) => {
                     const colleagues = [...event.target.selectedOptions].map(
                       (option) => +option.value
@@ -127,14 +138,7 @@ function EditorPanelComponent({ employee, updateEmployee, employees }: IProps) {
                   {employees
                     .filter((emp) => emp.id !== employee.id)
                     .map((emp) => (
-                      <option
-                        key={emp.id}
-                        value={emp.id}
-                        selected={
-                          employee.colleagues?.find((e) => e === emp.id) !==
-                          undefined
-                        }
-                      >
+                      <option key={emp.id} value={emp.id}>
                         {emp.fullName}
                       </option>
                     ))}
