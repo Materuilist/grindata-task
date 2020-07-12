@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b63a7da4721863fa45c1d4508b225b03",
+    "revision": "82bf621e6491a3645feb21085fcd7a63",
     "url": "/grindata-task/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/grindata-task/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "82e306f60ff3bbb9f5b2",
+    "revision": "698be29dab3492d12d6b",
     "url": "/grindata-task/static/css/main.66828433.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/grindata-task/static/js/2.725ace3b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "82e306f60ff3bbb9f5b2",
-    "url": "/grindata-task/static/js/main.6f3aa1a7.chunk.js"
+    "revision": "698be29dab3492d12d6b",
+    "url": "/grindata-task/static/js/main.6f691c3f.chunk.js"
   },
   {
     "revision": "e417b95172380030729f",

@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/grindata-task/static/css/main.66828433.chunk.css",
-    "main.js": "/grindata-task/static/js/main.6f3aa1a7.chunk.js",
-    "main.js.map": "/grindata-task/static/js/main.6f3aa1a7.chunk.js.map",
+    "main.js": "/grindata-task/static/js/main.6f691c3f.chunk.js",
+    "main.js.map": "/grindata-task/static/js/main.6f691c3f.chunk.js.map",
     "runtime-main.js": "/grindata-task/static/js/runtime-main.26d3b5e5.js",
     "runtime-main.js.map": "/grindata-task/static/js/runtime-main.26d3b5e5.js.map",
     "static/css/2.af3c1da9.chunk.css": "/grindata-task/static/css/2.af3c1da9.chunk.css",
     "static/js/2.725ace3b.chunk.js": "/grindata-task/static/js/2.725ace3b.chunk.js",
     "static/js/2.725ace3b.chunk.js.map": "/grindata-task/static/js/2.725ace3b.chunk.js.map",
     "index.html": "/grindata-task/index.html",
-    "precache-manifest.7e73d091eb48c00e1e44d7b2338967bd.js": "/grindata-task/precache-manifest.7e73d091eb48c00e1e44d7b2338967bd.js",
+    "precache-manifest.700328fbcae68fd93e1a2048ccf5e514.js": "/grindata-task/precache-manifest.700328fbcae68fd93e1a2048ccf5e514.js",
     "service-worker.js": "/grindata-task/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/grindata-task/static/css/2.af3c1da9.chunk.css.map",
     "static/css/main.66828433.chunk.css.map": "/grindata-task/static/css/main.66828433.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.725ace3b.chunk.js",
     "static/css/main.66828433.chunk.css",
-    "static/js/main.6f3aa1a7.chunk.js"
+    "static/js/main.6f691c3f.chunk.js"
   ]
 }
