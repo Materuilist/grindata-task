@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/grindata-task/precache-manifest.cab2be2454a543e87fb4bbb955f14c62.js"
+  "/grindata-task/precache-manifest.f64f0ede33c3ec872fa06159c5cf0107.js"
 );
 
 self.addEventListener('message', (event) => {
