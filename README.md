@@ -1,2 +1,2 @@
 GitHub pages:
-http://materuilist.github.io/grindata-task
+http://materuilist.github.io/grindata-task.
